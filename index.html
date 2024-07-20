@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+  <!-- CONTAINER START -->
+  <div class="container xl:mx-10 flex ">
+
+    <!-- LEFT START -->
+    <div
+      class="left h-screen max-h-screen z-20 fixed flex flex-col pl-3 overflow-y-auto overflow-x-hidden xl:w-[281px] w-20 ">
+      <div class="logo ml-3"><img src="images/logo.svg" class="w-9 mt-4 mb-4"></div>
+
+      <ul class="flex flex-col h-[40rem] ">
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 font-bold hover:bg-[#E6E7E7] ml-2 rounded-full pl-2 ">
+          <img src="images/home.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Home</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full ">
+          <img src="images/explore.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Explore</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full">
+          <img src="images/notifications.svg" class="w-8 cursor-pointer"> <span
+            class="cursor-pointer hidden xl:inline-block">Notifications</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full ">
+          <img src="images/messages.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Messages</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full">
+          <img src="images/grok.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Grok</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full ">
+          <img src="images/list.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Lists</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full">
+          <img src="images/profile.svg" class="w-8 cursor-pointer"> <span class="cursor-pointer hidden xl:inline-block">Profile</span>
+        </li>
+        <li class="flex flex-row items-center text-2xl gap-2 py-3 hover:bg-[#E6E7E7] ml-2 pl-2 rounded-full w-auto">
+          <img src="images/more.svg" class="w-8 cursor-pointer"><span class="cursor-pointer hidden xl:inline-block">More</span>
+        </li>
+      </ul>
+
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 text-sm px-10 mr-5 -ml-2 rounded-full my-4 hidden xl:inline-block 2xl:inline-block">Post</button>
+      <div
+        class="acc flex-row items-center gap-4 cursor-pointer hover:bg-gray-300 rounded-full mr-1 -mx-3 p-1 mb-14 hidden xl:flex">
+        <div class="pic"><img src="images/acc.jpg" class="w-11 rounded-full"></div>
+        <div class="info flex flex-col leading-5">
+          <div class="name font-bold">Code_Byte</div>
+          <div class="username text-gray-700">m_hasnain101</div>
+        </div>
+        <div class="dots"><img src="images/dots.svg" class="w-8"></div>
+      </div>
+    </div>
+
+    <!-- LEFT END -->
+
+    <!-- CENTER START -->
+    <div class="center flex-1 h-auto border lg:w-[400px] xl:w-[702px] mb-4 flex flex-col xl:ml-[281px] w-[702px] ml-20 ">
+      <div class="full-top flex w-[700px] sticky top-0 z-30 bg-white bg-opacity-75 ">
+        <div class="top flex w-full m-auto ">
+          <div class="options flex items-center justify-around m-auto w-full">
+            <div class="for-you font-bold text-lg cursor-pointer w-[50%] hover:bg-gray-200 text-center py-4">For You
+            </div>
+            <div class="following font-bold text-lg cursor-pointer w-[50%] hover:bg-gray-200 text-center py-4">Following
+            </div>
+          </div>
+        </div>
+        <div class="w-icon rounded-full flex items-center">
+          <span class="mx-3 flex"><img src="images/settings.svg"
+              class="w-8 cursor-pointer hover:bg-slate-200 rounded-full"></span>
+        </div>
+      </div>
+      <hr>
+
+      <div class="my-tweet">
+        <div class="write-tweet flex p-3">
+          <div class="my-pic"><img src="images/acc.jpg" class="w-11 rounded-full"></div>
+          <input type="text" class="text-xl ml-3" placeholder="What's happening?!">
+        </div>
+
+        <div class="icons-button flex justify-between">
+
+          <div class="tweet-icons flex px-6 py-1 gap-3">
+            <img src="images/gallery.svg" class="icon w-7 cursor-pointer">
+            <img src="images/gif.svg" class="icon w-7 cursor-pointer">
+            <img src="images/poll.svg" class="icon w-7 cursor-pointer">
+            <img src="images/face.svg" class="icon w-7 cursor-pointer">
+            <img src="images/schedule.svg" class="icon w-7 cursor-pointer">
+            <img src="images/location.svg" class="icon w-7 cursor-pointer">
+          </div>
+          <button type="button"
+            class="bg-blue-300 hover:bg-blue-500 text-white font-bold py-3 px-10 mr-5 ml-2 w-12 text-center flex justify-center items-center rounded-3xl my-4">Post</button>
+        </div>
+      </div>
+      <hr>
+
+      <div class="bg-white p-2 w-full">
+        <div class="inner p-3 bg-gray-100 rounded-3xl ">
+          <p class="text-gray-700">Thanks. X will use this to make your timeline better.</p>
+        </div>
+      </div>
+
+      <hr class="my-[3px]">
+      <hr class="my-[3px]">
+
+      <div class="tweets-container">
+
+        <div class="tweet-1 flex flex-col justify-center hover:bg-[#F7F9F9] cursor-pointer">
+          <div class="tweet-box flex ">
+            <div class="acc-pic mx-3 flex self-start mt-3 mr-4"><img src="images/acc.jpg" class="w-11 rounded-full">
+            </div>
+            <div class="nt-container flex flex-col leading-3">
+              <div class="acc-info flex items-center">
+                <span class="font-bold">Code_Byte</span>
+                <div class="flex justify-between w-[32rem] text-gray-600 items-center">
+                  <div class="t-username mx-[8px] flex text-gray-500">@Code_Byte <span class="ml-2">9h</span></div>
+                  <div class="ad flex relative top-3 items-center gap-1.5 leading-3"><span>Ad</span><img
+                      src="images/dots.svg" class="w-8 "></div>
+                </div>
+              </div>
+              <div class="the-tweet flex"><span>Hello this is the tweet!!!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-pic flex m-auto mt-5 mb-4 ml-14"><img src="images/pf4.png"
+              class="w-[35rem] h-[19rem] rounded-xl"></div>
+          <div class="allpost flex mb-9">
+            <div class="post-things flex justify-center ml-9 gap-[130px] w-[33rem]">
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  quick_phrases
+                </span>
+              </div>
+              <div
+                class="group inline-block hover:text-pink-500 hover:bg-pink-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+              <div
+                class="group inline-block hover:text-green-500 hover:bg-green-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  equalizer
+                </span>
+              </div>
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  repeat
+                </span>
+              </div>
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                bookmark
+              </span>
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                download
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <div class="tweet-2 flex flex-col justify-center hover:bg-[#F7F9F9] cursor-pointer">
+          <div class="tweet-box flex ">
+            <div class="acc-pic mx-3 flex self-start mt-3 mr-4"><img src="images/acc.jpg" class="w-11 rounded-full">
+            </div>
+            <div class="nt-container flex flex-col leading-3">
+              <div class="acc-info flex items-center">
+                <span class="font-bold">Code_Byte</span>
+                <div class="flex justify-between w-[32rem] text-gray-600 items-center">
+                  <div class="t-username mx-[8px] flex text-gray-500">@Code_Byte</div>
+                  <div class="ad flex relative top-3 items-center gap-1.5 leading-3"><span>Ad</span><img
+                      src="images/dots.svg" class="w-8 "></div>
+                </div>
+              </div>
+              <div class="the-tweet flex"><span>Hello this is the tweet!!!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-pic flex m-auto mt-5 mb-4 ml-14"><img src="images/pf2.png"
+              class="w-[35rem] h-[19rem] rounded-xl"></div>
+          <div class="allpost flex mb-9">
+            <div class="post-things flex justify-center ml-9 gap-[130px] w-[33rem]">
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  quick_phrases
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-pink-500 hover:bg-pink-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-green-500 hover:bg-green-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  equalizer
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  repeat
+                </span>
+              </div>
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                bookmark
+              </span>
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                download
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <div class="tweet-3 flex flex-col justify-center hover:bg-[#F7F9F9] cursor-pointer">
+          <div class="tweet-box flex ">
+            <div class="acc-pic mx-3 flex self-start mt-3 mr-4"><img src="images/acc.jpg" class="w-11 rounded-full">
+            </div>
+            <div class="nt-container flex flex-col leading-3">
+              <div class="acc-info flex items-center">
+                <span class="font-bold">Code_Byte</span>
+                <div class="flex justify-between w-[32rem] text-gray-600 items-center">
+                  <div class="t-username mx-[8px] flex text-gray-500">@Code_Byte</div>
+                  <div class="ad flex relative top-3 items-center gap-1.5 leading-3"><span>Ad</span><img
+                      src="images/dots.svg" class="w-8 "></div>
+                </div>
+              </div>
+              <div class="the-tweet flex"><span>Hello this is the tweet!!!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-pic flex m-auto mt-5 mb-4 ml-14"><img src="images/pf7.png"
+              class="w-[35rem] h-[19rem] rounded-xl"></div>
+          <div class="allpost flex mb-9">
+            <div class="post-things flex justify-center ml-9 gap-[130px] w-[33rem]">
+
+
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  quick_phrases
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-pink-500 hover:bg-pink-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  favorite
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-green-500 hover:bg-green-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  equalizer
+                </span>
+              </div>
+
+              <div
+                class="group inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+                <span class="material-symbols-outlined">
+                  repeat
+                </span>
+              </div>
+
+
+
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                bookmark
+              </span>
+            </div>
+            <div
+              class="group-inline-block hover:text-blue-500 hover:bg-blue-300 hover:rounded-full hover:cursor-pointer">
+              <span class="material-symbols-outlined">
+                download
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+
+      </div>
+
+    </div>
+    <!-- CENTER END -->
+
+
+    <!-- RIGHT START  -->
+    <div class="right mb-4 w-[450px] pl-9 pr-5 py-2 hidden xl:inline-block">
+
+      <div class="searchbar bg-[#EFF3F4] rounded-full mb-5 flex h-11 items-center ">
+        <span class="material-symbols-outlined my-4 flex items-center px-4">search</span>
+        <input type="text" class="bg-[#EFF3F4] text-white flex items-center text-xl" placeholder="Search">
+      </div>
+
+      <div class="subscribe-box bg-[#F7F9F9] mb-3 flex flex-col p-5 rounded-md">
+        <h2 class="text-2xl font-bold text-[#0F1419]">Subscribe to Premium</h2>
+        <p class="text-sm mt-3">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+        <button
+          class="bg-[#0F1419] hover:bg-zinc-800 text-white font-bold w-[35%] py-2 px-9 mr-5 -ml-2 rounded-3xl mt-4 text-lg flex items-center justify-center">Subscribe</button>
+      </div>
+
+      <div class="who-to-follow rounded-xl bg-[#F7F9F9] mb-3">
+        <div class="who-to flex flex-col pb-0">
+          <div class="heading text-2xl font-bold text-[#0F1419] mb-4 p-5">
+            <h1> Who to follow</h1>
+          </div>
+          <div class="profiles flex flex-col w-full">
+
+            <div class="profile1 px-5 flex mb-6 w-full hover:bg-slate-200 cursor-pointer items-center">
+              <div class="flex w-72">
+                <div class="flex pic"><img src="images/acc.jpg" class="w-12 rounded-full mr-2"></div>
+                <div class="flex flex-col mr-3 ">
+                  <div class="name flex"><span class="mr-1 font-bold hover:underline ">Code_Byte</span><img
+                      src="images/bluetick.svg" class="w-6">
+                  </div>
+                  <div class="flex username text-gray-500">@Code_Byte</div>
+                </div>
+              </div>
+              <button
+                class="bg-[#0F1419] hover:bg-zinc-800 text-white font-bold w-[30%] px-3 ml-16 h-10 rounded-3xl text-sm flex items-center justify-center">Follow</button>
+            </div>
+            <div class="profile2 px-5 flex mb-6 w-full hover:bg-slate-200 cursor-pointer items-center">
+              <div class="flex w-72">
+                <div class="flex pic"><img src="images/playstation.jpg" class="w-12 mr-2"></div>
+                <div class="flex flex-col mr-3 ">
+                  <div class="name flex"><span class="mr-1 font-bold hover:underline">PlayStation</span><img
+                      src="images/bluetick.svg" class="w-6">
+                  </div>
+                  <div class="flex username text-gray-500">@PlayStation</div>
+                </div>
+              </div>
+              <button
+                class="bg-[#0F1419] hover:bg-zinc-800 text-white font-bold w-[30%] px-3 ml-16 h-10 rounded-3xl text-sm flex items-center justify-center">Follow</button>
+            </div>
+            <div class="profile3 px-5 flex w-full hover:bg-slate-200 cursor-pointer items-center">
+              <div class="flex w-72 ">
+                <div class="flex pic"><img src="images/sportscenter.png" class="w-12 mr-2"></div>
+                <div class="flex flex-col mr-3 ">
+                  <div class="name flex"><span class="mr-1 font-bold hover:underline">Sports Centre</span><img
+                      src="images/bluetick.svg" class="w-6"></div>
+                  <div class="flex username text-gray-500">@Sportscentre</div>
+                </div>
+              </div>
+              <button
+                class="bg-[#0F1419] hover:bg-zinc-800 text-white font-bold w-[30%] px-3 ml-16 h-10 rounded-3xl text-sm flex items-center justify-center">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="showmore text-[#87C6F1] hover:text-blue-400 h-14 px-3 flex items-center text-base hover:bg-[#EFF3F4] bg-[#F7F9F9] rounded-b-xl cursor-pointer">
+          Show more</div>
+      </div>
+
+      <div class="terms flex p-5 rounded-xl bg-[#F7F9F9] text-gray-700 flex-wrap w-full h-auto">
+        <span class="cursor-pointer hover:underline mr-2">Terms of Services</span>
+        <span class="cursor-pointer hover:underline mr-2">Privacy Policy</span>
+        <span class="cursor-pointer hover:underline mr-2">Cookie Policy</span>
+        <span class="cursor-pointer hover:underline mr-2">Privacy Policy</span>
+        <span class="cursor-pointer hover:underline mr-2">Accessibility</span>
+        <span class="cursor-pointer hover:underline mr-2">Ads info</span>
+        <span class="cursor-pointer hover:underline mr-2">More...</span>
+        <span class="cursor-pointer hover:underline mr-2">&copy; 2024 X Corp</span>
+      </div>
+
+    </div>
+    <!-- RIGHT START  -->
+
+  </div>
+  <!-- CONTAINER END  -->
+
+</body>
+
+</html>
